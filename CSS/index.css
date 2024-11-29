@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');      
+
+*{
+  font-family: 'Oswald', sans-serif;
+}
+
+header {
+    width: 100%; /* El header ocupa todo el ancho de la página */
+    height: 250px; /* Altura fija del header */
+}
+
+header img {
+    width: 100%; /* La imagen ocupa todo el ancho del header */
+    height: 65%; /* La imagen ocupa el 60% de la altura del header */
+    display: block;
+}
+
+nav {
+    height: 35%;
+    font-size: 1.3em; /* Tamaño del texto */
+    align-items: center; /* Alineación vertical de los elementos */
+    background-color: #1b4289;
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos o viñetas de la lista */
+    display: flex; /* Usa Flexbox para alinear los elementos en fila */
+    justify-content: space-between; /* Distribuye los elementos uniformemente, con el primero alineado a la izquierda y el último a la derecha */
+    padding: 1em 2em; /* Espaciado horizontal entre los bordes de la página y los elementos */
+    margin: 0; /* Elimina márgenes adicionales */
+    
+}
+
+nav ul li {
+    flex: unset; /* Permite que los elementos ocupen solo el espacio necesario */
+    text-align: justify; /* Centra el texto dentro de cada elemento `li` */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #ffffff; /* Define un color para los enlaces */
+}
+
+nav ul li a:hover{
+    color: rgb(209, 10, 27);
+    font-weight: bold;
+}
+
+#Titulo{
+    text-align: center;
+    font-size: 3.7em;
+    letter-spacing: .5em;
+    word-spacing: 1em;
+}
+
+.contenedor {
+    display: grid; /* Utiliza CSS Grid para distribuir los elementos */
+    grid-template-columns: 1fr 1fr; /* Define 2 columnas de igual ancho */
+    gap: 20px; /* Espaciado entre columnas */
+  }
+  
+.primera {
+    display: flex; /* Alinea el contenido dentro del div */
+    align-items: center; /* Asegura que los textos estén alineados verticalmente */
+    justify-content: center; /* (Opcional) Centra el texto horizontalmente */
+    text-align: center; /* (Opcional) Centra el texto dentro del div */
+}
+  
+.primera p {
+    margin: 0; /* Elimina márgenes adicionales de los párrafos */
+    text-align: justify;
+}
+
+.contenedor2 {
+    display: grid; /* Utiliza CSS Grid para distribuir los elementos */
+    grid-template-columns: 1fr 1fr 1fr; /* Define 2 columnas de igual ancho */
+    gap: 20px; /* Espaciado entre columnas */
+}
+
+.contenedorGeneral {
+    border: 1px solid #ddd; /* Línea fina debajo de cada párrafo */
+    padding: 10px; /* Espaciado interno para separar el texto de la línea */
+    margin: 20px; /* Espacio adicional entre párrafos */
+}
