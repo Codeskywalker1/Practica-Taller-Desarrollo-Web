@@ -1,52 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');      
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-*{
-  font-family: 'Oswald', sans-serif;
+* {
+    font-family: 'Oswald', sans-serif;
 }
 
 header {
-    width: 100%; /* El header ocupa todo el ancho de la página */
-    height: 250px; /* Altura fija del header */
+    width: 100%;
+    /* El header ocupa todo el ancho de la página */
+    height: 250px;
+    /* Altura fija del header */
 }
 
 header img {
-    width: 100%; /* La imagen ocupa todo el ancho del header */
-    height: 65%; /* La imagen ocupa el 60% de la altura del header */
+    width: 100%;
+    /* La imagen ocupa todo el ancho del header */
+    height: 65%;
+    /* La imagen ocupa el 60% de la altura del header */
     display: block;
 }
 
 nav {
     height: 35%;
-    font-size: 1.3em; /* Tamaño del texto */
-    align-items: center; /* Alineación vertical de los elementos */
+    font-size: 1.3em;
+    /* Tamaño del texto */
+    align-items: center;
+    /* Alineación vertical de los elementos */
     background-color: #1b4289;
 }
 
 nav ul {
-    list-style: none; /* Elimina los puntos o viñetas de la lista */
-    display: flex; /* Usa Flexbox para alinear los elementos en fila */
-    justify-content: space-between; /* Distribuye los elementos uniformemente, con el primero alineado a la izquierda y el último a la derecha */
-    padding: 1em 2em; /* Espaciado horizontal entre los bordes de la página y los elementos */
-    margin: 0; /* Elimina márgenes adicionales */
-    
+    list-style: none;
+    /* Elimina los puntos o viñetas de la lista */
+    display: flex;
+    /* Usa Flexbox para alinear los elementos en fila */
+    justify-content: space-between;
+    /* Distribuye los elementos uniformemente, con el primero alineado a la izquierda y el último a la derecha */
+    padding: 1em 2em;
+    /* Espaciado horizontal entre los bordes de la página y los elementos */
+    margin: 0;
+    /* Elimina márgenes adicionales */
+
 }
 
 nav ul li {
-    flex: unset; /* Permite que los elementos ocupen solo el espacio necesario */
-    text-align: justify; /* Centra el texto dentro de cada elemento `li` */
+    flex: unset;
+    /* Permite que los elementos ocupen solo el espacio necesario */
+    text-align: justify;
+    /* Centra el texto dentro de cada elemento `li` */
 }
 
-nav ul li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    color: #ffffff; /* Define un color para los enlaces */
+nav a {
+    text-decoration: none;
+    /* Elimina el subrayado de los enlaces */
+    color: #ffffff;
+    /* Define un color para los enlaces */
 }
 
-nav ul li a:hover{
+nav a:hover {
     color: rgb(209, 10, 27);
     font-weight: bold;
 }
 
-#Titulo{
+#Titulo {
     text-align: center;
     font-size: 3.7em;
     letter-spacing: .5em;
@@ -54,31 +69,142 @@ nav ul li a:hover{
 }
 
 .contenedor {
-    display: grid; /* Utiliza CSS Grid para distribuir los elementos */
-    grid-template-columns: 1fr 1fr; /* Define 2 columnas de igual ancho */
-    gap: 20px; /* Espaciado entre columnas */
-  }
-  
-.primera {
-    display: flex; /* Alinea el contenido dentro del div */
-    align-items: center; /* Asegura que los textos estén alineados verticalmente */
-    justify-content: center; /* (Opcional) Centra el texto horizontalmente */
-    text-align: center; /* (Opcional) Centra el texto dentro del div */
+    display: grid;
+    /* Utiliza CSS Grid para distribuir los elementos */
+    grid-template-columns: 1fr 1fr;
+    /* Define 2 columnas de igual ancho */
+    gap: 20px;
+    /* Espaciado entre columnas */
 }
-  
+
+.primera {
+    display: flex;
+    /* Alinea el contenido dentro del div */
+    align-items: center;
+    /* Asegura que los textos estén alineados verticalmente */
+    justify-content: center;
+    /* (Opcional) Centra el texto horizontalmente */
+    text-align: center;
+    /* (Opcional) Centra el texto dentro del div */
+}
+
 .primera p {
-    margin: 0; /* Elimina márgenes adicionales de los párrafos */
+    margin: 0;
+    /* Elimina márgenes adicionales de los párrafos */
     text-align: justify;
 }
 
 .contenedor2 {
-    display: grid; /* Utiliza CSS Grid para distribuir los elementos */
-    grid-template-columns: 1fr 1fr 1fr; /* Define 2 columnas de igual ancho */
-    gap: 20px; /* Espaciado entre columnas */
+    display: grid;
+    /* Utiliza CSS Grid para distribuir los elementos */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Define 2 columnas de igual ancho */
+    gap: 20px;
+    /* Espaciado entre columnas */
 }
 
 .contenedorGeneral {
-    border: 1px solid #ddd; /* Línea fina debajo de cada párrafo */
-    padding: 10px; /* Espaciado interno para separar el texto de la línea */
-    margin: 20px; /* Espacio adicional entre párrafos */
+    border: 1px solid #ddd;
+    /* Línea fina debajo de cada párrafo */
+    padding: 10px;
+    /* Espaciado interno para separar el texto de la línea */
+    margin: 20px;
+    /* Espacio adicional entre párrafos */
+}
+
+.imagen {
+    background-image: url(../imagenes/fondocolor.webp);
+    /* Ruta correcta de la imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    height: 100%;
+    /* Asegura que el div tenga altura completa */
+    color: #becac8;
+}
+
+.imagen p {
+    background-image: url(../imagenes/fondocolor.webp);
+    /* Ruta correcta de la imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center;
+    /* Centra la imagen en el contenedor */
+    height: 100%;
+    /* Asegura que el div tenga altura completa */
+    color: #d6fa0b;
+    margin: .5em;
+
+}
+
+.textofondo {
+    color: rgb(255, 255, 255);
+}
+
+.textofondo a {
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.equipos {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    flex-wrap: wrap; /* Permite que los elementos pasen a una nueva línea si no caben */
+    list-style: none;
+    padding: 0;
+}
+
+.equipos li {
+    text-align: center;
+    margin: 10px; /* Espacio alrededor de cada elemento */
+}
+
+
+.equipos img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    height: auto;
+    width: 50px;
+    height: 75px;
+}
+
+footer {
+    background-image: url('../imagenes/logonba2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .contacto-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer h1 {
+    margin: 0;
 }
